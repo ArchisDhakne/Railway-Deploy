@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
 app.get('/test',(req,res)=>{
     res.send('Test route is working!');
 })
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
